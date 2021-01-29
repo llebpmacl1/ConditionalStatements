@@ -39,6 +39,10 @@ namespace ConditionalStatements
                     {
                         Console.WriteLine("B is for Bees. Or boats. Or Banana. Or the grade that you got.");
                     }
+                    else if ((grade_input >= 80) && (grade_input <= 81))
+                    {
+                        Console.WriteLine("You are getting a B-. Bully for you.");
+                    }
                     else if ((grade_input >= 78) && (grade_input <= 79))
                     {
                         Console.WriteLine("You got a C+! Woo for high-end mediocrity.");
@@ -58,6 +62,14 @@ namespace ConditionalStatements
                     else if ((grade_input >= 62) && (grade_input <= 67))
                     {
                         Console.WriteLine("You got a D. We gotta pump those numbers up! I mean it. Don't let that student debt accumulate for nothin'");
+                    }
+                    else if ((grade_input >= 60) && (grade_input <= 61))
+                    {
+                        Console.WriteLine("Uh oh, a D-.");
+                    }
+                    else if (grade_input < 60)
+                    {
+                        Console.WriteLine("F. F is for failure. F is also for fun, of which you might have had too much of.");
                     }
                 }
                 else
