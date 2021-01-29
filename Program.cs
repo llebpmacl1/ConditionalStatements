@@ -14,15 +14,20 @@ namespace ConditionalStatements
                 Console.WriteLine("Hiya! What numerical grade do you expect to get in ISM 4300? Go ahead and round to the nearest whole number, would ya?");
 
                 string input = Console.ReadLine();
-
+                int grade_input = int.Parse(input);
                 try
                 {
-                    int grade_input = int.Parse(input);
+
                     if ((grade_input > 0) || (grade_input <= 100))
                     {
                         valid = 1;
                     }
-                    else if ((grade_input >= 98) && (grade_input <= 100))
+                }
+                catch
+                {
+                    Console.WriteLine("Beep Boop... does not compute. Lemme git that one mo' time");
+                }
+                    if ((grade_input >= 98) && (grade_input <= 100))
                     {
                         Console.WriteLine("Congrats you're getting an A+. Also, you should probably get out more.");
                     }
@@ -67,9 +72,7 @@ namespace ConditionalStatements
                         Console.WriteLine("Woah Woah Woah, something isnt right here. Try entering a number between 0 and 100!");
                     }
                 }
-                catch
-                {
-                    Console.WriteLine("Beep Boop... does not compute. Lemme git that one mo' time");                
+                               
                 }
 
             }
@@ -83,6 +86,6 @@ namespace ConditionalStatements
 
                
 
-            }
-        }
+            
+        
     
